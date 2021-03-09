@@ -66,11 +66,38 @@ const log = () =>{
 }
 setTimeout(log(), 2000);
 
+/* For your setTimeout function, you can do it all in one line
+using an arrow function. It's just a bit cleaner and takes up less lines
+
+setTimeout(() => {
+    window.alert("IT'S LIT");
+}, 2000);
+
+*/
+
 for(let i = 0; i < countries.length; i++){
     console.log(countries[i]);
 }
+
+/* Instead of using this old school for loop, we can use a for..of loop to
+iterate through each element of an array. It's quite simple and awesome.
+
+for (const country of countries) {
+    console.log(country);
+}
+
+*/
 
 const keys = Object.keys(variable);
 for(let i = 0; i < keys.length; i++){
     console.log(variable[keys[i]]);
 }
+
+/* Just like the for..of loop for arrays, we have a for..in loop that does
+the same with objects.
+
+for (const element of variable) {
+    console.log(element);
+}
+
+*/
